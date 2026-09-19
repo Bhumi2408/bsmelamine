@@ -1,26 +1,268 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* ==========================================================
+   BRAND DESIGN TOKENS
+   Centralised palette + type scale for the tableware catalogue.
+   Adding tokens here makes them available as Tailwind utilities
+   (e.g. bg-cream, text-ink, border-gold) with no config file.
+   ========================================================== */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-cream: #faf7f2;
+  --color-cream-soft: #f5efe8;
+  --color-cream-bright: #fffdf9;
+
+  --color-nude: #d8c2b5;
+  --color-blush: #e8c8c5;
+  --color-rose: #c99a98;
+  --color-sage: #b8c6b0;
+  --color-beige: #e9dccb;
+
+  --color-ink: #403936;
+  --color-taupe: #63564f;
+  --color-gold: #9c7c4e;
+  --color-stone: #9d8c82;
+
+  --font-sans: var(--font-manrope);
+  --font-serif: var(--font-cormorant);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  border-color: var(--color-nude);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-rose);
+  color: var(--color-cream-bright);
+}
+
+/* ---------- Scrollbar ---------- */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cream-soft);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-nude);
+  border-radius: 999px;
+  border: 2px solid var(--color-cream-soft);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-rose);
+}
+
+/* hide scrollbar for horizontal drag galleries, keep it scrollable */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ---------- Typography helpers ---------- */
+.font-display {
+  font-family: var(--font-serif);
+  font-optical-sizing: auto;
+}
+
+.eyebrow {
+  font-family: var(--font-sans);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-gold);
+}
+
+/* ---------- Organic decorative shapes ---------- */
+.blob {
+  border-radius: 62% 38% 55% 45% / 48% 45% 55% 52%;
+}
+
+.blob-2 {
+  border-radius: 42% 58% 63% 37% / 41% 46% 54% 59%;
+}
+
+/* ---------- Keyframes ---------- */
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-16px);
+  }
+}
+@keyframes float-y-slow {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1.5deg);
+  }
+}
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin-slow-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes draw-line {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.92);
+    opacity: 0.55;
+  }
+  70%,
+  100% {
+    transform: scale(1.18);
+    opacity: 0;
+  }
+}
+
+.animate-float-y {
+  animation: float-y 6s ease-in-out infinite;
+}
+.animate-float-y-slow {
+  animation: float-y-slow 9s ease-in-out infinite;
+}
+.animate-spin-slow {
+  animation: spin-slow 40s linear infinite;
+}
+.animate-spin-slow-reverse {
+  animation: spin-slow-reverse 50s linear infinite;
+}
+.animate-marquee {
+  animation: marquee 34s linear infinite;
+}
+.animate-pulse-soft {
+  animation: pulse-soft 3.5s ease-in-out infinite;
+}
+.animate-pulse-ring {
+  animation: pulse-ring 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.origin-left-line {
+  transform-origin: left center;
+}
+
+/* ---------- Orbit rotation (Category Journey) ----------
+   The orbit ring rotates continuously; each label counter-rotates at the
+   same rate so its text stays upright. Hovering the wheel pauses both. */
+.animate-orbit {
+  animation: spin-slow 70s linear infinite;
+}
+.animate-orbit-counter {
+  animation: spin-slow-reverse 70s linear infinite;
+}
+.orbit-wheel:hover .animate-orbit,
+.orbit-wheel:hover .animate-orbit-counter {
+  animation-play-state: paused;
+}
+
+/* ---------- Focus states (accessibility) ---------- */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ---------- Magnetic button base ---------- */
+.btn-magnetic {
+  will-change: transform;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.35s ease;
+}
+.btn-magnetic:hover {
+  box-shadow: 0 10px 30px -10px rgba(184, 155, 114, 0.55);
+}
+
+/* ---------- Film-grain texture ----------
+   A very low-opacity noise layer over the whole page so flat nude/cream
+   fields read as textured paper instead of a plain digital gradient. */
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
+
+/* ---------- Signature accent gradient ----------
+   Used for the top ribbon line and as a subtle underline/divider accent
+   so the palette reads as considered rather than uniformly flat. */
+.accent-gradient {
+  background: linear-gradient(
+    90deg,
+    var(--color-gold),
+    var(--color-rose) 45%,
+    var(--color-sage) 100%
+  );
+}
+
+.text-gradient-gold {
+  background: linear-gradient(90deg, var(--color-gold), var(--color-rose));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Same idea, but light-toned — for use on medium/dark backgrounds where
+   the gold/rose gradient above would be too close in value to read. */
+.text-gradient-light {
+  background: linear-gradient(90deg, var(--color-cream-bright), var(--color-blush));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
