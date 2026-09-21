@@ -33,7 +33,7 @@ export const metadata = {
     "premium tableware India",
   ],
   icons:{
-    icon:"/logo.png"
+    icon:"/logo.webp"
   }
 };
 

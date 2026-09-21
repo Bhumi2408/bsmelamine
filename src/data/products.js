@@ -10,7 +10,7 @@ export const products = [
     slug: "dhaaka-half-plate-8",
     name: '8" Dhaaka Half Plate',
     category: "flat-plates",
-    image: "/images/products/plate-01.png",
+    image: "/images/products/plate-01.webp",
     description: "A softly rimmed half plate, sized for everyday portions.",
   },
   {
@@ -18,7 +18,7 @@ export const products = [
     slug: "dm-lite-8",
     name: '8" DM Lite',
     category: "flat-plates",
-    image: "/images/products/plate-02.png",
+    image: "/images/products/plate-02.webp",
     description: "Light in hand, finished with a clean, modern edge.",
   },
   {
@@ -26,7 +26,7 @@ export const products = [
     slug: "dm-rocket-8",
     name: '8" DM Rocket',
     category: "flat-plates",
-    image: "/images/products/plate-03.png",
+    image: "/images/products/plate-03.webp",
     description: "A sculpted rim that catches the light beautifully.",
   },
   {
@@ -34,7 +34,7 @@ export const products = [
     slug: "dm-super-8",
     name: '8" DM Super',
     category: "flat-plates",
-    image: "/images/products/plate-04.png",
+    image: "/images/products/plate-04.webp",
     description: "Our most-loved everyday size, in a refined silhouette.",
   },
   {
@@ -42,7 +42,7 @@ export const products = [
     slug: "family-8",
     name: '8" Family',
     category: "flat-plates",
-    image: "/images/products/plate-05.png",
+    image: "/images/products/plate-05.webp",
     description: "An easy, versatile plate for daily family meals.",
   },
   {
@@ -50,7 +50,7 @@ export const products = [
     slug: "dhaka-full-plate-10",
     name: '10" Dhaka Full Plate',
     category: "flat-plates",
-    image: "/images/products/plate-06.png",
+    image: "/images/products/plate-06.webp",
     description: "A generous full plate for main courses and gatherings.",
   },
   {
@@ -58,7 +58,7 @@ export const products = [
     slug: "family-10",
     name: '10" Family',
     category: "flat-plates",
-    image: "/images/products/plate-07.png",
+    image: "/images/products/plate-07.webp",
     description: "Wide and welcoming, built for sharing.",
   },
   {
@@ -66,7 +66,7 @@ export const products = [
     slug: "sanmik-11",
     name: '11" Sanmik',
     category: "deep-plates",
-    image: "/images/products/plate-08.png",
+    image: "/images/products/plate-08.webp",
     description: "A statement plate with a graceful, deep well.",
   },
   {
@@ -74,7 +74,7 @@ export const products = [
     slug: "family-12",
     name: '12" Family',
     category: "deep-plates",
-    image: "/images/products/plate-09.png",
+    image: "/images/products/plate-09.webp",
     description: "Our largest family plate, made for celebration meals.",
   },
   {
@@ -82,7 +82,7 @@ export const products = [
     slug: "dm-full-plate-13",
     name: '13" DM Full Plate',
     category: "flat-plates",
-    image: "/images/products/plate-10.png",
+    image: "/images/products/plate-10.webp",
     description: "An expansive centrepiece plate for festive spreads.",
   },
   {
@@ -90,7 +90,7 @@ export const products = [
     slug: "dm-full-plate-13",
     name: '13" DM Full Plate',
     category: "flat-plates",
-    image: "/images/products/plate-11.png",
+    image: "/images/products/plate-11.webp",
     description: "An expansive centrepiece plate for festive spreads.",
   },
   {
@@ -98,7 +98,7 @@ export const products = [
     slug: "dm-full-plate-13",
     name: '13" DM Full Plate',
     category: "flat-plates",
-    image: "/images/products/plate-12.png",
+    image: "/images/products/plate-12.webp",
     description: "An expansive centrepiece plate for festive spreads.",
   },
   {
@@ -106,7 +106,7 @@ export const products = [
     slug: "dm-full-plate-13",
     name: '13" DM Full Plate',
     category: "flat-plates",
-    image: "/images/products/plate-13.png",
+    image: "/images/products/plate-13.webp",
     description: "An expansive centrepiece plate for festive spreads.",
   },
   {
@@ -114,7 +114,7 @@ export const products = [
     slug: "dm-full-plate-13",
     name: '13" DM Full Plate',
     category: "flat-plates",
-    image: "/images/products/plate-14.png",
+    image: "/images/products/plate-14.webp",
     description: "An expansive centrepiece plate for festive spreads.",
   },
   {
@@ -122,7 +122,7 @@ export const products = [
     slug: "dm-full-plate-13",
     name: '13" DM Full Plate',
     category: "flat-plates",
-    image: "/images/products/plate-15.png",
+    image: "/images/products/plate-15.webp",
     description: "An expansive centrepiece plate for festive spreads.",
   },
 
@@ -132,7 +132,7 @@ export const products = [
     slug: "candy-bowl",
     name: "Candy Bowl",
     category: "bowls",
-    image: "/images/products/bowl-01.png",
+    image: "/images/products/bowl-01.webp",
     description: "A petite, rounded bowl for sweets and small servings.",
   },
   {
@@ -140,7 +140,7 @@ export const products = [
     slug: "soup-bowl",
     name: "Soup Bowl",
     category: "soup-plates",
-    image: "/images/products/bowl-02.png",
+    image: "/images/products/bowl-02.webp",
     description: "Deep and comforting, made for warm broths.",
   },
   {
@@ -148,7 +148,7 @@ export const products = [
     slug: "daizy-bowl",
     name: "Daizy Bowl",
     category: "bowls",
-    image: "/images/products/bowl-03.png",
+    image: "/images/products/bowl-03.webp",
     description: "A softly fluted bowl with an everyday charm.",
   },
   {
@@ -156,7 +156,7 @@ export const products = [
     slug: "tuppkka-bowl",
     name: "Tuppkka Bowl",
     category: "bowls",
-    image: "/images/products/bowl-04.png",
+    image: "/images/products/bowl-04.webp",
     description: "Rounded and generous, for curries and companions.",
   },
   {
@@ -164,7 +164,7 @@ export const products = [
     slug: "handi",
     name: "Handi",
     category: "bowls",
-    image: "/images/products/bowl-05.png",
+    image: "/images/products/bowl-05.webp",
     description: "A traditional silhouette, styled for the modern table.",
   },
   {
@@ -172,7 +172,7 @@ export const products = [
     slug: "grey-donga",
     name: "Grey Donga",
     category: "k-donga",
-    image: "/images/products/bowl-06.png",
+    image: "/images/products/bowl-06.webp",
     description: "Understated tones with a quietly elegant finish.",
   },
   {
@@ -180,7 +180,7 @@ export const products = [
     slug: "k-noor-soup-plate",
     name: "K Noor Soup Plate",
     category: "soup-plates",
-    image: "/images/products/bowl-07.png",
+    image: "/images/products/bowl-07.webp",
     description: "A wide, shallow well designed for soups and stews.",
   },
   {
@@ -188,7 +188,7 @@ export const products = [
     slug: "magic-soup-plate",
     name: "Magic Soup Plate",
     category: "soup-plates",
-    image: "/images/products/bowl-08.png",
+    image: "/images/products/bowl-08.webp",
     description: "Effortlessly elegant, for everyday comfort food.",
   },
 
@@ -198,7 +198,7 @@ export const products = [
     slug: "daizy-donga-set",
     name: "Daizy Donga Set",
     category: "donga-with-lid",
-    image: "/images/products/donga-01.png",
+    image: "/images/products/donga-01.webp",
     description: "Keeps meals warm with a softly domed, lidded silhouette.",
   },
   {
@@ -206,7 +206,7 @@ export const products = [
     slug: "galaxy-donga-set",
     name: "Galaxy Donga Set",
     category: "donga-with-lid",
-    image: "/images/products/donga-02.png",
+    image: "/images/products/donga-02.webp",
     description: "A rounded lid crowns this everyday serving essential.",
   },
   {
@@ -214,7 +214,7 @@ export const products = [
     slug: "new-donga-oraa-set",
     name: "New Donga Oraa Set",
     category: "donga-with-lid",
-    image: "/images/products/donga-03.png",
+    image: "/images/products/donga-03.webp",
     description: "Sleek lines meet reliable, everyday warmth.",
   },
   {
@@ -222,7 +222,7 @@ export const products = [
     slug: "new-donga-royal-set",
     name: "New Donga Royal Set",
     category: "donga-with-lid",
-    image: "/images/products/donga-04.png",
+    image: "/images/products/donga-04.webp",
     description: "A statement piece for celebratory family dinners.",
   },
   {
@@ -230,7 +230,7 @@ export const products = [
     slug: "oppal-donga-set",
     name: "Oppal Donga Set",
     category: "donga-with-lid",
-    image: "/images/products/donga-05.png",
+    image: "/images/products/donga-05.webp",
     description: "Softly curved, with a lid that seals in warmth.",
   },
   {
@@ -238,7 +238,7 @@ export const products = [
     slug: "smile-donga-set",
     name: "Smile Donga Set",
     category: "donga-with-lid",
-    image: "/images/products/donga-06.png",
+    image: "/images/products/donga-06.webp",
     description: "A cheerful everyday shape for daily serving.",
   },
   {
@@ -246,7 +246,7 @@ export const products = [
     slug: "sq-donga",
     name: "SQ Donga",
     category: "k-donga",
-    image: "/images/products/dongas-07.png",
+    image: "/images/products/dongas-07.webp",
     description: "Clean, structured lines for the considered table.",
   },
   {
@@ -254,7 +254,7 @@ export const products = [
     slug: "flora-donga",
     name: "Flora Donga",
     category: "donga-with-lid",
-    image: "/images/products/donga-08.png",
+    image: "/images/products/donga-08.webp",
     description: "Clean, structured lines for the considered table.",
   },
 
@@ -264,7 +264,7 @@ export const products = [
     slug: "chilly-tray",
     name: "Chilly Tray",
     category: "lite-trays",
-    image: "/images/products/tray-01.png",
+    image: "/images/products/tray-01.webp",
     description: "A compact tray for condiments and small servings.",
   },
   {
@@ -272,7 +272,7 @@ export const products = [
     slug: "gol-tray",
     name: "Gol Tray",
     category: "lite-trays",
-    image: "/images/products/tray-02.png",
+    image: "/images/products/tray-02.webp",
     description: "Round and versatile, for everyday carrying.",
   },
   {
@@ -280,7 +280,7 @@ export const products = [
     slug: "icon-tray",
     name: "Icon Tray",
     category: "premium-trays",
-    image: "/images/products/tray-03.png",
+    image: "/images/products/tray-03.webp",
     description: "A signature silhouette with a refined, raised edge.",
   },
   {
@@ -288,7 +288,7 @@ export const products = [
     slug: "lux-tray",
     name: "Lux Tray",
     category: "premium-trays",
-    image: "/images/products/tray-04.png",
+    image: "/images/products/tray-04.webp",
     description: "Understated luxury, ready for guests any day.",
   },
   {
@@ -296,7 +296,7 @@ export const products = [
     slug: "max-tray",
     name: "Max Tray",
     category: "premium-trays",
-    image: "/images/products/tray-05.png",
+    image: "/images/products/tray-05.webp",
     description: "Our largest tray, built for serving in style.",
   },
   {
@@ -304,7 +304,7 @@ export const products = [
     slug: "noor-tray",
     name: "Noor Tray",
     category: "premium-trays",
-    image: "/images/products/tray-06.png",
+    image: "/images/products/tray-06.webp",
     description: "Soft curves finished with a graceful, gilded rim.",
   },
   {
@@ -312,7 +312,7 @@ export const products = [
     slug: "square-tray",
     name: "Square Tray",
     category: "lite-trays",
-    image: "/images/products/tray-07.png",
+    image: "/images/products/tray-07.webp",
     description: "Structured and modern, for a considered serve.",
   },
   {
@@ -320,7 +320,7 @@ export const products = [
     slug: "taj-tray",
     name: "Taj Tray",
     category: "premium-trays",
-    image: "/images/products/tray-08.png",
+    image: "/images/products/tray-08.webp",
     description: "Inspired by architectural elegance and symmetry.",
   },
   {
@@ -328,7 +328,7 @@ export const products = [
     slug: "curve-tray",
     name: "Curve Tray",
     category: "lite-trays",
-    image: "/images/products/tray-09.png",
+    image: "/images/products/tray-09.webp",
     description: "Gentle curves for an easy, everyday carry.",
   },
   {
@@ -336,7 +336,7 @@ export const products = [
     slug: "hema-tray",
     name: "Hema Tray",
     category: "lite-trays",
-    image: "/images/products/tray-10.png",
+    image: "/images/products/tray-10.webp",
     description: "A light, airy tray for tea time and beyond.",
   },
   {
@@ -344,7 +344,7 @@ export const products = [
     slug: "lemon-tray",
     name: "Lemon Tray",
     category: "lite-trays",
-    image: "/images/products/tray-11.png",
+    image: "/images/products/tray-11.webp",
     description: "A cheerful everyday shape with a soft rim.",
   },
   {
@@ -352,7 +352,7 @@ export const products = [
     slug: "lovely-tray",
     name: "Lovely Tray",
     category: "lite-trays",
-    image: "/images/products/tray-13.png",
+    image: "/images/products/tray-13.webp",
     description: "Delicate detailing for a gentle table presence.",
   },
   {
@@ -360,7 +360,7 @@ export const products = [
     slug: "pinki",
     name: "Pinki",
     category: "lite-trays",
-    image: "/images/products/tray-12.png",
+    image: "/images/products/tray-12.webp",
     description: "Playful and light, for casual everyday serving.",
   },
   {
@@ -368,7 +368,7 @@ export const products = [
     slug: "rice-tray",
     name: "Rice Tray",
     category: "premium-trays",
-    image: "/images/products/tray-14.png",
+    image: "/images/products/tray-14.webp",
     description: "Wide and shallow, made for the centre of the table.",
   },
 
@@ -378,7 +378,7 @@ export const products = [
     slug: "daizy-dinner-set",
     name: "Daizy Dinner Set",
     category: "dinner-sets",
-    image: "/images/products/dinner-set-01.png",
+    image: "/images/products/dinner-set-01.webp",
     description: "A complete, coordinated collection for everyday dining.",
     composition: ["Dinner Plates", "Soup Plates", "Bowls", "Serving Pieces", "Spoons"],
   },
@@ -387,7 +387,7 @@ export const products = [
     slug: "flora-dinner-set",
     name: "Flora Dinner Set",
     category: "dinner-sets",
-    image: "/images/products/dinner-set-02.png",
+    image: "/images/products/dinner-set-02.webp",
     description: "Soft floral-inspired detailing across every piece.",
     composition: ["Dinner Plates", "Quarter Plates", "Bowls", "Serving Pieces", "Spoons"],
   },
@@ -396,7 +396,7 @@ export const products = [
     slug: "bravia-dinner-set",
     name: "Bravia Dinner Set",
     category: "dinner-sets",
-    image: "/images/products/dinner-set-03.png",
+    image: "/images/products/dinner-set-03.webp",
     description: "Clean, modern lines for the everyday table.",
     composition: ["Dinner Plates", "Soup Plates", "Bowls", "Serving Pieces"],
   },
@@ -405,7 +405,7 @@ export const products = [
     slug: "celebration-dinner-set",
     name: "Celebration Dinner Set",
     category: "dinner-sets",
-    image: "/images/products/dinner-set-04.png",
+    image: "/images/products/dinner-set-04.webp",
     description: "Designed for festive gatherings and shared celebrations.",
     composition: ["Dinner Plates", "Quarter Plates", "Bowls", "Serving Pieces", "Spoons"],
   },
@@ -414,7 +414,7 @@ export const products = [
     slug: "rigel-dinner-set",
     name: "Rigel Dinner Set",
     category: "dinner-sets",
-    image: "/images/products/dinner-set-05.png",
+    image: "/images/products/dinner-set-05.webp",
     description: "A refined, contemporary collection for the whole table.",
     composition: ["Dinner Plates", "Soup Plates", "Bowls", "Serving Pieces"],
   },
@@ -423,7 +423,7 @@ export const products = [
     slug: "dezire-dinner-set",
     name: "Dezire Dinner Set",
     category: "dinner-sets",
-    image: "/images/products/dinner-set-06.png",
+    image: "/images/products/dinner-set-06.webp",
     description: "Timeless detailing for daily and special occasions alike.",
     composition: ["Dinner Plates", "Bowls", "Serving Pieces", "Spoons"],
   },
@@ -432,7 +432,7 @@ export const products = [
     slug: "amaan-dinner-set",
     name: "Amaan Dinner Set",
     category: "dinner-sets",
-    image: "/images/products/dinner-set-07.png",
+    image: "/images/products/dinner-set-07.webp",
     description: "Warm, welcoming pieces made for family dinners.",
     composition: ["Dinner Plates", "Quarter Plates", "Bowls", "Serving Pieces"],
   },
@@ -441,7 +441,7 @@ export const products = [
     slug: "nikah-dinner-set",
     name: "Nikah Dinner Set",
     category: "dinner-sets",
-    image: "/images/products/dinner-set-08.png",
+    image: "/images/products/dinner-set-08.webp",
     description: "Elegant enough for wedding tables and beyond.",
     composition: ["Dinner Plates", "Soup Plates", "Bowls", "Serving Pieces", "Spoons"],
   },
@@ -450,7 +450,7 @@ export const products = [
     slug: "flora-king-dinner-set",
     name: "Flora King Dinner Set",
     category: "dinner-sets",
-    image: "/images/products/dinner-set-09.png",
+    image: "/images/products/dinner-set-09.webp",
     description: "The Flora silhouette, scaled up for grand tables.",
     composition: ["Dinner Plates", "Quarter Plates", "Bowls", "Serving Pieces", "Spoons"],
   },
@@ -459,7 +459,7 @@ export const products = [
     slug: "rigel-king-dinner-set",
     name: "Rigel King Dinner Set",
     category: "dinner-sets",
-    image: "/images/products/dinner-set-10.png",
+    image: "/images/products/dinner-set-10.webp",
     description: "A larger take on Rigel, for our biggest gatherings.",
     composition: ["Dinner Plates", "Soup Plates", "Bowls", "Serving Pieces", "Spoons"],
   },
@@ -470,7 +470,7 @@ export const products = [
     slug: "matt-bowl",
     name: "Matt Bowl",
     category: "hotelware",
-    image: "/images/products/hotelware-01.png",
+    image: "/images/products/hotelware-01.webp",
     description: "A softly matte finish for understated service.",
   },
   {
@@ -478,7 +478,7 @@ export const products = [
     slug: "fruit-bowl",
     name: "Fruit Bowl",
     category: "hotelware",
-    image: "/images/products/hotelware-02.png",
+    image: "/images/products/hotelware-02.webp",
     description: "Wide and welcoming, for fresh daily displays.",
   },
   {
@@ -486,7 +486,7 @@ export const products = [
     slug: "jalebi-plate",
     name: "Jalebi Plate",
     category: "hotelware",
-    image: "/images/products/hotelware-03.png",
+    image: "/images/products/hotelware-03.webp",
     description: "Sized and shaped for classic Indian sweets.",
   },
   {
@@ -494,7 +494,7 @@ export const products = [
     slug: "basket",
     name: "Basket",
     category: "hotelware",
-    image: "/images/products/hotelware-04.png",
+    image: "/images/products/hotelware-04.webp",
     description: "A woven-look serving basket for breads and snacks.",
   },
   {
@@ -502,7 +502,7 @@ export const products = [
     slug: "kadai",
     name: "Kadai",
     category: "hotelware",
-    image: "/images/products/hotelware-05.png",
+    image: "/images/products/hotelware-05.webp",
     description: "The classic serving vessel, reimagined in melamine.",
   },
   {
@@ -510,7 +510,7 @@ export const products = [
     slug: "falafal-platter",
     name: "Falafal Platter",
     category: "hotelware",
-    image: "/images/products/hotelware-06.png",
+    image: "/images/products/hotelware-06.webp",
     description: "Long and elegant, built for shared plates.",
   },
   {
@@ -518,7 +518,7 @@ export const products = [
     slug: "hs-platter",
     name: "HS Platter",
     category: "hotelware",
-    image: "/images/products/hotelware-07.png",
+    image: "/images/products/hotelware-07.webp",
     description: "A versatile platter for buffets and banquets.",
   },
   {
@@ -526,7 +526,7 @@ export const products = [
     slug: "leaf-platter",
     name: "Leaf Platter",
     category: "hotelware",
-    image: "/images/products/hotelware-08.png",
+    image: "/images/products/hotelware-08.webp",
     description: "An organic silhouette inspired by a single leaf.",
   },
   {
@@ -534,7 +534,7 @@ export const products = [
     slug: "oval-platter",
     name: "Oval Platter",
     category: "hotelware",
-    image: "/images/products/hotelware-09.png",
+    image: "/images/products/hotelware-09.webp",
     description: "A graceful oval, ideal for mains and centrepieces.",
   },
   {
@@ -542,7 +542,7 @@ export const products = [
     slug: "spiral-bowl",
     name: "Spiral Bowl",
     category: "hotelware",
-    image: "/images/products/hotelware-10.png",
+    image: "/images/products/hotelware-10.webp",
     description: "Sculptural ridges add quiet texture and interest.",
   },
   {
@@ -550,7 +550,7 @@ export const products = [
     slug: "sq-platter",
     name: "SQ Platter",
     category: "hotelware",
-    image: "/images/products/hotelware-11.png",
+    image: "/images/products/hotelware-11.webp",
     description: "Crisp, square lines for modern plating.",
   },
 
@@ -560,7 +560,7 @@ export const products = [
     slug: "nav-saucer",
     name: "Nav Saucer",
     category: "black-items",
-    image: "/images/products/black-01.png",
+    image: "/images/products/black-01.webp",
     description: "A matte black saucer with a quietly modern edge.",
   },
   {
@@ -568,7 +568,7 @@ export const products = [
     slug: "bhalla-plate",
     name: "Bhalla Plate",
     category: "black-items",
-    image: "/images/products/black-02.png",
+    image: "/images/products/black-02.webp",
     description: "Deep tones that make every dish stand out.",
   },
   {
@@ -576,7 +576,7 @@ export const products = [
     slug: "dmd-bati",
     name: "DMD Bati",
     category: "black-items",
-    image: "/images/products/black-03.png",
+    image: "/images/products/black-03.webp",
     description: "A small serving bowl finished in matte black.",
   },
   {
@@ -584,7 +584,7 @@ export const products = [
     slug: "egg-saucer",
     name: "Egg Saucer",
     category: "black-items",
-    image: "/images/products/black-04.png",
+    image: "/images/products/black-04.webp",
     description: "A gently curved saucer for small servings.",
   },
   {
@@ -592,7 +592,7 @@ export const products = [
     slug: "egg-tray",
     name: "Egg Tray",
     category: "black-items",
-    image: "/images/products/black-05.png",
+    image: "/images/products/black-05.webp",
     description: "Compact and practical, styled in matte black.",
   },
   {
@@ -600,7 +600,7 @@ export const products = [
     slug: "flower-bati",
     name: "Flower Bati",
     category: "black-items",
-    image: "/images/products/black-06.png",
+    image: "/images/products/black-06.webp",
     description: "A softly fluted bati with contemporary appeal.",
   },
   {
@@ -608,7 +608,7 @@ export const products = [
     slug: "kamal-bati",
     name: "Kamal Bati",
     category: "black-items",
-    image: "/images/products/black-07.png",
+    image: "/images/products/black-07.webp",
     description: "Lotus-inspired detailing in a deep matte black.",
   },
   {
@@ -616,7 +616,7 @@ export const products = [
     slug: "momo-platter",
     name: "Momo Platter",
     category: "black-items",
-    image: "/images/products/black-08.png",
+    image: "/images/products/black-08.webp",
     description: "Designed for steamed favourites and shared plates.",
   },
   {
@@ -624,7 +624,7 @@ export const products = [
     slug: "sandwich-tray",
     name: "Sandwich Tray",
     category: "black-items",
-    image: "/images/products/black-09.png",
+    image: "/images/products/black-09.webp",
     description: "A long, narrow tray built for snack service.",
   },
   {
@@ -632,7 +632,7 @@ export const products = [
     slug: "snack-tray",
     name: "Snack Tray",
     category: "black-items",
-    image: "/images/products/black-10.png",
+    image: "/images/products/black-10.webp",
     description: "Compartments for a considered snacking spread.",
   },
 
@@ -642,7 +642,7 @@ export const products = [
     slug: "big-spoon",
     name: "Big Spoon",
     category: "spoons",
-    image: "/images/products/spoon-01.png",
+    image: "/images/products/spoon-01.webp",
     description: "A generous serving spoon for everyday meals.",
   },
   {
@@ -650,7 +650,7 @@ export const products = [
     slug: "kanta-fork",
     name: "Kanta / Fork",
     category: "spoons",
-    image: "/images/products/spoon-02.png",
+    image: "/images/products/spoon-02.webp",
     description: "A classic fork silhouette, finished with care.",
   },
   {
@@ -658,7 +658,7 @@ export const products = [
     slug: "karchi",
     name: "Karchi",
     category: "spoons",
-    image: "/images/products/spoon-03.png",
+    image: "/images/products/spoon-03.webp",
     description: "A deep-bowled ladle for curries and gravies.",
   },
   {
@@ -666,7 +666,7 @@ export const products = [
     slug: "new-spoon",
     name: "New Spoon",
     category: "spoons",
-    image: "/images/products/spoon-04.png",
+    image: "/images/products/spoon-04.webp",
     description: "An everyday spoon with a softly rounded bowl.",
   },
   {
@@ -674,7 +674,7 @@ export const products = [
     slug: "panja",
     name: "Panja",
     category: "spoons",
-    image: "/images/products/spoon-05.png",
+    image: "/images/products/spoon-05.webp",
     description: "A serving fork designed for rice and salads.",
   },
   {
@@ -682,7 +682,7 @@ export const products = [
     slug: "tea-spoon",
     name: "Tea Spoon",
     category: "spoons",
-    image: "/images/products/spoon-06.png",
+    image: "/images/products/spoon-06.webp",
     description: "A small, considered detail for tea and dessert.",
   },
 ];
@@ -721,15 +721,15 @@ export const blackItems = products.filter((p) => p.id.startsWith("bi-"));
 export const spoonDetails = products.filter((p) => p.id.startsWith("s-"));
 
 export const heroImages = {
-  plate: "/images/hero/hero-plate.png",
-  bowl: "/images/hero/hero-bowl.png",
-  tray: "/images/hero/hero-tray.png",
-  spoon: "/images/hero/hero-spoon.png",
+  plate: "/images/hero/hero-plate.webp",
+  bowl: "/images/hero/hero-bowl.webp",
+  tray: "/images/hero/hero-tray.webp",
+  spoon: "/images/hero/hero-spoon.webp",
 };
 
 export const lifestyleImages = {
-  manifesto: "/images/lifestyle/manifesto-plate.png",
-  artOfTable: "/images/lifestyle/art-of-table.png",
-  finalCta: "/images/lifestyle/final-cta-plate.png",
-  dongaCenter: "/images/lifestyle/donga-center.png",
+  manifesto: "/images/lifestyle/manifesto-plate.webp",
+  artOfTable: "/images/lifestyle/art-of-table.webp",
+  finalCta: "/images/lifestyle/final-cta-plate.webp",
+  dongaCenter: "/images/lifestyle/donga-center.webp",
 };

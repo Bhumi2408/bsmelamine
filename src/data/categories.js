@@ -12,7 +12,7 @@ export const categories = [
     name: "Deep Plates",
     short: "Deep Plates",
     description: "Generous, gently curved plates for saucy, everyday meals.",
-    image: "/images/categories/deep-plate.png",
+    image: "/images/categories/deep-plate.webp",
     anchor: "plates",
   },
   {
@@ -20,7 +20,7 @@ export const categories = [
     name: "K Plates",
     short: "K Plates",
     description: "Classic profiles finished with a soft, matte touch.",
-    image: "/images/categories/k-plates.png",
+    image: "/images/categories/k-plates.webp",
     anchor: "plates",
   },
   {
@@ -28,7 +28,7 @@ export const categories = [
     name: "Flate Plates",
     short: "Flate Plates",
     description: "Clean, wide rims that let every dish take centre stage.",
-    image: "/images/categories/flate-plates.png",
+    image: "/images/categories/flate-plates.webp",
     anchor: "plates",
   },
   {
@@ -36,7 +36,7 @@ export const categories = [
     name: "Soup Plates",
     short: "Soup Plates",
     description: "Rounded wells built for broths, curries and comfort.",
-    image: "/images/categories/soup-plates.png",
+    image: "/images/categories/soup-plates.webp",
     anchor: "bowls",
   },
   {
@@ -44,7 +44,7 @@ export const categories = [
     name: "Bowls",
     short: "Bowls",
     description: "Rounded, huggable forms for everyday servings.",
-    image: "/images/categories/bowls.png",
+    image: "/images/categories/bowls.webp",
     anchor: "bowls",
   },
   {
@@ -52,7 +52,7 @@ export const categories = [
     name: "Black Items",
     short: "Black Items",
     description: "Matte black pieces that add quiet drama to the table.",
-    image: "/images/categories/black-items.png",
+    image: "/images/categories/black-items.webp",
     anchor: "hotelware",
   },
   {
@@ -60,7 +60,7 @@ export const categories = [
     name: "Small Items",
     short: "Small Items",
     description: "The little pieces that finish a beautifully set table.",
-    image: "/images/categories/small-item.png",
+    image: "/images/categories/small-item.webp",
     anchor: "spoons",
   },
   {
@@ -68,7 +68,7 @@ export const categories = [
     name: "K Donga",
     short: "K Donga",
     description: "Traditional serveware, reimagined for daily use.",
-    image: "/images/categories/k-donga.png",
+    image: "/images/categories/k-donga.webp",
     anchor: "donga",
   },
   {
@@ -76,7 +76,7 @@ export const categories = [
     name: "Donga With Lid",
     short: "Donga With Lid",
     description: "Keep meals warm and beautiful, from stove to table.",
-    image: "/images/categories/donga-with-lid.png",
+    image: "/images/categories/donga-with-lid.webp",
     anchor: "donga",
   },
   {
@@ -84,7 +84,7 @@ export const categories = [
     name: "Premium Trays",
     short: "Premium Trays",
     description: "Statement trays for serving with a little more flourish.",
-    image: "/images/categories/premium-trays.png",
+    image: "/images/categories/premium-trays.webp",
     anchor: "trays",
   },
   {
@@ -92,7 +92,7 @@ export const categories = [
     name: "Lite Trays",
     short: "Lite Trays",
     description: "Everyday trays, light in hand and easy to love.",
-    image: "/images/categories/lite-trays.png",
+    image: "/images/categories/lite-trays.webp",
     anchor: "trays",
   },
   {
@@ -100,7 +100,7 @@ export const categories = [
     name: "Hotelware",
     short: "Hotelware",
     description: "Durable, elegant pieces built for busy, beautiful service.",
-    image: "/images/categories/hotelware.png",
+    image: "/images/categories/hotelware.webp",
     anchor: "hotelware",
   },
   {
@@ -108,7 +108,7 @@ export const categories = [
     name: "Spoons",
     short: "Spoons",
     description: "Small details that make every serving feel considered.",
-    image: "/images/categories/spoons.png",
+    image: "/images/categories/spoons.webp",
     anchor: "spoons",
   },
   {
@@ -116,7 +116,7 @@ export const categories = [
     name: "Dinner Sets",
     short: "Dinner Sets",
     description: "Complete, coordinated collections for the whole table.",
-    image: "/images/categories/dinner-sets.png",
+    image: "/images/categories/dinner-sets.webp",
     anchor: "dinner-sets",
   },
 ];

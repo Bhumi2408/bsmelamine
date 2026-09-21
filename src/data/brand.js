@@ -2,7 +2,7 @@
 // whenever it's ready — no component code needs to change.
 export const brand = {
   name: "BS Melamine",
-  logo: "/logo.png",
+  logo: "/logo.webp",
   logoWidth: 168,
   logoHeight: 44,
   phones: ["+91 78386 95052", "+91 92108 34155"],
