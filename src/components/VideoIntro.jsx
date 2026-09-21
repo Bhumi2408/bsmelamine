@@ -2,7 +2,7 @@ import { media } from "@/data/media";
 
 export default function VideoIntro() {
   return (
-    <section className="relative w-full h-[700px] overflow-hidden bg-ink">
+    <section className="relative w-full h-[400px] md:h-[700px] overflow-hidden bg-ink">
       <video
         src={media.introVideo}
         autoPlay
