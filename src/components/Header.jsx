@@ -9,7 +9,7 @@ import { easeLux } from "@/lib/motion";
 import { brand } from "@/data/brand";
 
 const navLinks = [
-  { label: "Home", href: "#home" },
+  { label: "Home", href: "/" },
   { label: "Collections", href: "#collections" },
   { label: "Tableware", href: "#tableware" },
   { label: "Dinner Sets", href: "#dinner-sets" },
@@ -35,6 +35,14 @@ export default function Header() {
     };
   }, [menuOpen]);
 
+  const navLinkClass = scrolled
+    ? "text-cream-bright/70 hover:text-cream-bright hover:bg-cream-bright/10"
+    : "text-cream-bright/70 hover:text-ink hover:bg-ink/5";
+
+  const menuBtnClass = scrolled
+    ? "text-cream-bright hover:text-ink hover:bg-cream-bright"
+    : "text-cream-bright hover:text-cream-bright hover:bg-ink";
+
   return (
     <>
       <motion.header
@@ -44,7 +52,7 @@ export default function Header() {
         className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
           scrolled
             ? "bg-ink/95 backdrop-blur-md shadow-[0_8px_30px_-15px_rgba(0,0,0,0.5)]"
-            : "bg-ink/80 backdrop-blur-sm"
+            : "bg-ink/5 backdrop-blur-sm"
         }`}
       >
         <div aria-hidden className="h-0.75 w-full accent-gradient" />
@@ -52,7 +60,9 @@ export default function Header() {
         <div className="mx-auto max-w-[1440px] px-6 md:px-10 lg:px-16 flex items-center justify-between h-20 md:h-24">
           <Link
             href="/"
-            className="relative group shrink-0 inline-flex items-center bg-cream-bright rounded-xl px-1 py-1 shadow-[0_4px_14px_-4px_rgba(0,0,0,0.35)] transition-transform duration-300 group-hover:scale-[1.03]"
+            className={`relative group shrink-0 inline-flex items-center rounded-xl px-1 py-1 transition-all duration-300 group-hover:scale-[1.03] ${
+              scrolled ? "bg-cream-bright shadow-[0_4px_14px_-4px_rgba(0,0,0,0.35)]" : ""
+            }`}
           >
             <Image
               src={brand.logo}
@@ -72,7 +82,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="relative px-4 py-2 rounded-full text-[13px] tracking-wide uppercase text-cream-bright/70 hover:text-cream-bright hover:bg-cream-bright/10 transition-all duration-300"
+                className={`relative px-4 py-2 rounded-full font-bold text-[14px] tracking-wide uppercase transition-all duration-300 ${navLinkClass}`}
               >
                 {link.label}
               </Link>
@@ -84,7 +94,7 @@ export default function Header() {
               aria-label="Open menu"
               aria-expanded={menuOpen}
               onClick={() => setMenuOpen(true)}
-              className="inline-flex p-2.5 rounded-full text-cream-bright hover:text-ink hover:bg-cream-bright transition-all duration-300"
+              className={`inline-flex p-2.5 rounded-full transition-all duration-300 ${menuBtnClass}`}
             >
               <Menu size={22} strokeWidth={1.5} />
             </button>

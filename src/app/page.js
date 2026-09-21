@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import VideoIntro from "@/components/VideoIntro";
 import Hero from "@/components/Hero";
 import BrandManifesto from "@/components/BrandManifesto";
 import CategoryJourney from "@/components/CategoryJourney";
@@ -20,9 +21,11 @@ export default function Home() {
     <>
       <Header />
       <main>
-        <Hero />
+        <VideoIntro />
+        
         <BrandManifesto />
         <CategoryJourney />
+        <Hero />
         <ArtOfTable />
         <FeaturedCollection />
         <PlateStories />
