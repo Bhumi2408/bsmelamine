@@ -44,7 +44,6 @@ export default function RootLayout({ children }) {
       className={`${manrope.variable} ${cormorant.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-cream text-ink">
-        <div aria-hidden className="grain-overlay" />
         {children}
       </body>
     </html>

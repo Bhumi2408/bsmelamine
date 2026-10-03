@@ -22,7 +22,23 @@ export default function TrayGallery() {
   const parallaxRow = useTransform(scrollYProgress, [0, 1], [0, -60]);
 
   // Auto-scrolls the gallery back and forth so the drag/scroll interaction
-  // is obvious even before anyone touches it.
+  // is obvious even before anyone touches it. The loop is suspended while
+  // the gallery is off-screen so it isn't burning frames in the background.
+  const visibleRef = useRef(true);
+
+  useEffect(() => {
+    const track = trackRef.current;
+    if (!track || typeof IntersectionObserver === "undefined") return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        visibleRef.current = entry.isIntersecting;
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(track);
+    return () => observer.disconnect();
+  }, []);
+
   useEffect(() => {
     const track = trackRef.current;
     if (!track) return;
@@ -33,7 +49,7 @@ export default function TrayGallery() {
     let rafId;
 
     const step = () => {
-      if (!pausedRef.current) {
+      if (!pausedRef.current && visibleRef.current) {
         const max = track.scrollWidth - track.clientWidth;
         let next = track.scrollLeft + 0.6 * direction;
         if (next >= max) {

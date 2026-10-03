@@ -7,12 +7,13 @@ import { fadeUp, viewportOnce } from "@/lib/motion";
 import { useAutoCycle } from "@/lib/useAutoCycle";
 
 export default function DinnerSets() {
-  const [activeIndex, setActiveIndex] = useAutoCycle(dinnerSets.length, 3600);
+  const [activeIndex, setActiveIndex, autoCycleRef] = useAutoCycle(dinnerSets.length, 3600);
   const active = dinnerSets[activeIndex];
 
   return (
     <section
       id="dinner-sets"
+      ref={autoCycleRef}
       className="relative py-16 md:py-20 overflow-hidden transition-colors duration-700 bg-beige/40"
     >
       <div

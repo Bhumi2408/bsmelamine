@@ -10,7 +10,16 @@ const blackFeatured = blackItems.slice(0, 6);
 
 export default function Hotelware() {
   return (
-    <section id="hotelware" className="relative overflow-hidden py-16 md:py-20 bg-cream-bright">
+    <section id="hotelware" className="relative overflow-hidden py-20 md:py-28 bg-ink">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-px bg-cream-bright/10"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -bottom-40 right-[-10%] w-[420px] h-[420px] bg-gold/10 blob animate-spin-slow"
+      />
+
       <div className="relative mx-auto max-w-[1440px] px-6 md:px-10 lg:px-16">
         <motion.div
           variants={fadeUp}
@@ -20,13 +29,15 @@ export default function Hotelware() {
           className="max-w-xl mx-auto text-center mb-16 md:mb-20"
         >
           <p className="eyebrow mb-5">Hotelware &amp; black items</p>
-          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl text-ink leading-[1.05]">
+          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl text-cream-bright leading-[1.05]">
             Quiet <span className="text-rose italic">drama</span>, ready for service.
           </h2>
         </motion.div>
 
-        <Row title="Hotelware" products={hotelwareFeatured} tone="mixed" />
-        <Row title="Black Items" products={blackFeatured} tone="black-product" className="mt-16 md:mt-20" />
+        <div className="grid lg:grid-cols-2 gap-14 lg:gap-10 ">
+          <Row title="Hotelware" products={hotelwareFeatured} tone="mixed" />
+          <Row title="Black Items" products={blackFeatured} tone="black-product" className="lg:pl-10" />
+        </div>
       </div>
     </section>
   );
@@ -41,9 +52,9 @@ function Row({ title, products, tone = "mixed", className = "" }) {
 
   return (
     <div className={className}>
-      <h3 className="font-display text-2xl sm:text-3xl text-ink mb-7">{title}</h3>
+      <h3 className="font-display text-2xl sm:text-3xl text-cream-bright mb-7">{title}</h3>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-5">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-5">
         {products.map((product, i) => (
           <motion.div
             key={product.id}
@@ -54,7 +65,7 @@ function Row({ title, products, tone = "mixed", className = "" }) {
           >
             <div className="group block">
               <div
-                className={`relative aspect-square rounded-2xl overflow-hidden border border-nude/50 transition-all duration-500 group-hover:-translate-y-1.5 group-hover:border-gold/60 group-hover:shadow-[0_18px_35px_-18px_rgba(64,57,54,0.3)] ${cardBg}`}
+                className={`relative aspect-square rounded-2xl overflow-hidden border border-cream-bright/10 transition-all duration-500 group-hover:-translate-y-1.5 group-hover:border-gold/60 group-hover:shadow-[0_18px_35px_-15px_rgba(0,0,0,0.6)] ${cardBg}`}
               >
                 <Image
                   src={product.image}
@@ -64,7 +75,7 @@ function Row({ title, products, tone = "mixed", className = "" }) {
                   className="object-contain p-6 transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
-              <p className="mt-3 text-xs sm:text-sm text-ink font-medium text-center">
+              <p className="mt-3 text-xs sm:text-sm text-cream-bright/80 font-medium text-center">
                 {product.name}
               </p>
             </div>

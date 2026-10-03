@@ -14,11 +14,11 @@ const annotations = [
 ];
 
 export default function DongaStory() {
-  const [activeIndex, setActiveIndex] = useAutoCycle(dongaCollection.length, 3200);
+  const [activeIndex, setActiveIndex, autoCycleRef] = useAutoCycle(dongaCollection.length, 3200);
   const active = dongaCollection[activeIndex];
 
   return (
-    <section id="donga" className="py-16 md:py-20 overflow-hidden">
+    <section id="donga" ref={autoCycleRef} className="py-16 md:py-20 overflow-hidden">
       <div className="mx-auto max-w-[1440px] px-6 md:px-10 lg:px-16">
         <motion.div
           variants={fadeUp}

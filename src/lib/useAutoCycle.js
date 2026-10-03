@@ -4,11 +4,15 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 // Cycles through `length` items on a timer so the interaction is discoverable
 // even if nobody hovers/clicks. Any manual selection (hover, click, drag)
-// pauses the timer briefly, then autoplay resumes.
+// pauses the timer briefly, then autoplay resumes. The timer itself is
+// suspended whenever the returned `ref` is scrolled out of view, so idle
+// sections don't keep re-rendering in the background.
 export function useAutoCycle(length, interval = 3200) {
   const [index, setIndexState] = useState(0);
   const intervalRef = useRef(null);
   const resumeRef = useRef(null);
+  const visibleRef = useRef(true);
+  const containerRef = useRef(null);
 
   const stopInterval = useCallback(() => {
     if (intervalRef.current) clearInterval(intervalRef.current);
@@ -18,7 +22,7 @@ export function useAutoCycle(length, interval = 3200) {
   const startInterval = useCallback(() => {
     stopInterval();
     intervalRef.current = setInterval(() => {
-      setIndexState((i) => (i + 1) % length);
+      if (visibleRef.current) setIndexState((i) => (i + 1) % length);
     }, interval);
   }, [stopInterval, interval, length]);
 
@@ -34,6 +38,19 @@ export function useAutoCycle(length, interval = 3200) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [length]);
 
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el || typeof IntersectionObserver === "undefined") return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        visibleRef.current = entry.isIntersecting;
+      },
+      { threshold: 0.15 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   const select = useCallback(
     (i) => {
       setIndexState(i);
@@ -44,5 +61,5 @@ export function useAutoCycle(length, interval = 3200) {
     [stopInterval, startInterval, interval]
   );
 
-  return [index, select];
+  return [index, select, containerRef];
 }

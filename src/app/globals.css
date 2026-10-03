@@ -75,15 +75,23 @@ body {
 .font-display {
   font-family: var(--font-serif);
   font-optical-sizing: auto;
+  font-weight: 500;
+  letter-spacing: -0.01em;
 }
 
 .eyebrow {
   font-family: var(--font-sans);
-  letter-spacing: 0.25em;
+  letter-spacing: 0.28em;
   text-transform: uppercase;
-  font-size: 0.72rem;
-  font-weight: 600;
+  font-size: 0.74rem;
+  font-weight: 700;
   color: var(--color-gold);
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
 }
 
 /* ---------- Organic decorative shapes ---------- */
@@ -155,17 +163,6 @@ body {
     opacity: 1;
   }
 }
-@keyframes pulse-ring {
-  0% {
-    transform: scale(0.92);
-    opacity: 0.55;
-  }
-  70%,
-  100% {
-    transform: scale(1.18);
-    opacity: 0;
-  }
-}
 
 .animate-float-y {
   animation: float-y 6s ease-in-out infinite;
@@ -185,26 +182,9 @@ body {
 .animate-pulse-soft {
   animation: pulse-soft 3.5s ease-in-out infinite;
 }
-.animate-pulse-ring {
-  animation: pulse-ring 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
 
 .origin-left-line {
   transform-origin: left center;
-}
-
-/* ---------- Orbit rotation (Category Journey) ----------
-   The orbit ring rotates continuously; each label counter-rotates at the
-   same rate so its text stays upright. Hovering the wheel pauses both. */
-.animate-orbit {
-  animation: spin-slow 70s linear infinite;
-}
-.animate-orbit-counter {
-  animation: spin-slow-reverse 70s linear infinite;
-}
-.orbit-wheel:hover .animate-orbit,
-.orbit-wheel:hover .animate-orbit-counter {
-  animation-play-state: paused;
 }
 
 /* ---------- Focus states (accessibility) ---------- */
@@ -223,20 +203,6 @@ button:focus-visible {
 }
 .btn-magnetic:hover {
   box-shadow: 0 10px 30px -10px rgba(184, 155, 114, 0.55);
-}
-
-/* ---------- Film-grain texture ----------
-   A very low-opacity noise layer over the whole page so flat nude/cream
-   fields read as textured paper instead of a plain digital gradient. */
-.grain-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 40;
-  pointer-events: none;
-  opacity: 0.05;
-  mix-blend-mode: multiply;
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-repeat: repeat;
 }
 
 /* ---------- Signature accent gradient ----------
